@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>بحث | druze</title>
+  <meta name="description" content="بحث داخل الموسوعة."/>
+  <base href="/druze/">
+  <link rel="stylesheet" href="assets/css/museum.css"/>
+  <script defer src="assets/js/site.js"></script>
+  <script defer src="assets/js/search.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="ar/">
+        <div class="kicker">أداة</div>
+        <div class="logo">بحث</div>
+      </a>
+
+      <nav class="nav">
+        <a class="pill" href="ar/">الرئيسية</a>
+        <a class="pill" href="ar/encyclopedia/who-are-the-druze/">المدخل</a>
+        <a class="pill" href="ar/encyclopedia/history/">التاريخ</a>
+        <a class="pill" href="en/search/">English</a>
+        <button class="pill" onclick="toggleTheme()">الوضع</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main" style="padding-top:26px">
+    <section class="card card-pad">
+      <div class="kicker">بحث فوري</div>
+      <h1 class="h1" style="font-size:40px">ابحث داخل الموسوعة</h1>
+      <p class="lead">اكتب كلمة أو جملة، وستظهر النتائج فورًا.</p>
+
+      <div style="margin-top:14px">
+        <input id="q" class="search-input" placeholder="ابحث: تاريخ، هوية، مدخل..." />
+      </div>
+
+      <div class="hr"></div>
+      <div id="results" class="search-results list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© druze — البحث</div>
+  </footer>
+</body>
+</html>
