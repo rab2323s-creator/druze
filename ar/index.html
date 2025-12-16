@@ -29,71 +29,98 @@
   </header>
 
   <main class="container hero">
-    <section class="card card-pad">
-      <div class="kicker">تقديم وثائقي</div>
-      <h1 class="h1">موسوعة وثائقية عن الدروز</h1>
-      <p class="lead">
-        تجربة قراءة حديثة بأسلوب المجلات: عناوين قوية، صفحات موسوعية،
-        وبنية واضحة قابلة للتوسع — بدون أي أدوات بناء.
-      </p>
+  <!-- Featured story -->
+  <section class="card card-pad" style="position:relative; overflow:hidden">
+    <div class="kicker">قصة الغلاف</div>
 
-      <div class="actions">
-        <a class="btn primary" href="ar/encyclopedia/who-are-the-druze/">ابدأ من هنا</a>
-        <a class="btn ghost" href="ar/encyclopedia/history/">لمحات تاريخية</a>
-        <a class="btn ghost" href="ar/search/">بحث داخل الموسوعة</a>
+    <h1 class="h1" style="max-width:16ch">
+      من هم الدروز؟
+      <br/>قراءة هادئة خارج الصور النمطية
+    </h1>
+
+    <p class="lead" style="max-width:68ch">
+      مدخل وثائقي يقدّم تعريفًا عامًا ومحايدًا، يهدف إلى الفهم
+      بدل التصنيف، ويضع القارئ في السياق التاريخي والثقافي
+      دون الدخول في تفاصيل مغلقة أو جدلية.
+    </p>
+
+    <div class="actions">
+      <a class="btn primary" href="ar/encyclopedia/who-are-the-druze/">
+        اقرأ القصة
+      </a>
+      <a class="btn ghost" href="ar/encyclopedia/history/">
+        الخلفية التاريخية
+      </a>
+    </div>
+
+    <!-- subtle editorial accent -->
+    <div style="
+      position:absolute;
+      inset:-40% -20%;
+      background:
+        radial-gradient(closest-side,
+          color-mix(in srgb, var(--accent) 18%, transparent),
+          transparent 65%);
+      transform:rotate(12deg);
+      pointer-events:none;">
+    </div>
+  </section>
+
+  <!-- Editorial sections -->
+  <section class="main">
+    <div class="section-title">
+      <h2>في هذا العدد</h2>
+      <div class="hint">قراءات وثائقية مختارة</div>
+    </div>
+
+    <div class="grid3">
+      <a class="card tile" href="ar/encyclopedia/history/">
+        <div class="kicker">أرشيف</div>
+        <h3>لمحات تاريخية</h3>
+        <p>محطات أساسية لفهم السياق التاريخي العام.</p>
+      </a>
+
+      <a class="card tile" href="ar/search/">
+        <div class="kicker">أداة</div>
+        <h3>ابحث في الموسوعة</h3>
+        <p>ابحث حسب الموضوع أو الكلمة المفتاحية.</p>
+      </a>
+
+      <div class="card tile">
+        <div class="kicker">قريبًا</div>
+        <h3>الأسئلة الشائعة</h3>
+        <p>إجابات مختصرة للأسئلة الأكثر تداولًا.</p>
       </div>
-    </section>
+    </div>
 
-    <section class="main">
-      <div class="section-title">
-        <h2>أقسام سريعة</h2>
-        <div class="hint">نموذج مجلة: بطاقات + مسارات قراءة</div>
-      </div>
+    <!-- Reading paths -->
+    <div class="section-title" style="margin-top:28px">
+      <h2>مسارات قراءة</h2>
+      <div class="hint">اقرأ حسب اهتمامك</div>
+    </div>
 
-      <div class="grid3">
-        <a class="card tile" href="ar/encyclopedia/who-are-the-druze/">
-          <div class="kicker">مدخل</div>
-          <h3>من هم الدروز؟</h3>
-          <p>مقدمة محايدة تساعد القارئ على فهم الصورة العامة.</p>
-        </a>
+    <div class="grid3">
+      <a class="card tile" href="ar/encyclopedia/who-are-the-druze/">
+        <div class="kicker">مسار</div>
+        <h3>الفهم السريع</h3>
+        <p>ابدأ بالمدخل ثم انتقل للأسئلة الشائعة.</p>
+      </a>
 
-        <a class="card tile" href="ar/encyclopedia/history/">
-          <div class="kicker">أرشيف</div>
-          <h3>التاريخ والنشأة</h3>
-          <p>محطات أساسية مرتبة بعقلية وثائقية.</p>
-        </a>
+      <a class="card tile" href="ar/encyclopedia/history/">
+        <div class="kicker">مسار</div>
+        <h3>الخلفية التاريخية</h3>
+        <p>سرد زمني يساعد على الفهم العميق.</p>
+      </a>
 
-        <a class="card tile" href="ar/search/">
-          <div class="kicker">أداة</div>
-          <h3>بحث</h3>
-          <p>اكتب كلمة وسترى النتائج فورًا.</p>
-        </a>
-      </div>
+      <a class="card tile" href="ar/search/">
+        <div class="kicker">مسار</div>
+        <h3>حسب الاهتمام</h3>
+        <p>استخدم البحث للوصول لمواضيع محددة.</p>
+      </a>
+    </div>
+  </section>
+</main>
 
-      <div class="section-title" style="margin-top:26px">
-        <h2>مسارات قراءة مقترحة</h2>
-        <div class="hint">يمكنك إضافة عشرات المسارات لاحقًا</div>
-      </div>
-
-      <div class="grid3">
-        <a class="card tile" href="ar/encyclopedia/who-are-the-druze/">
-          <div class="kicker">مسار 1</div>
-          <h3>الفهم السريع</h3>
-          <p>ابدأ بالتعريف ثم الأسئلة الشائعة.</p>
-        </a>
-        <a class="card tile" href="ar/encyclopedia/history/">
-          <div class="kicker">مسار 2</div>
-          <h3>الخط الزمني</h3>
-          <p>اقرأ التاريخ ثم توسّع بالمناطق والشخصيات.</p>
-        </a>
-        <a class="card tile" href="ar/search/">
-          <div class="kicker">مسار 3</div>
-          <h3>بحث حسب الاهتمام</h3>
-          <p>ابحث: عادات، مجتمع، هوية…</p>
-        </a>
-      </div>
-    </section>
-  </main>
 
   <footer class="footer">
     <div class="container">© druze — الإصدار العربي</div>
