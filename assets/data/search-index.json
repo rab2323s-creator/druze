@@ -12,5 +12,26 @@
     "desc": "محطات تاريخية مرتبة بأسلوب وثائقي حديث.",
     "url": "ar/encyclopedia/history/",
     "tags": ["تاريخ", "أرشيف", "نشأة"]
+
   }
+
+,
+{
+  "lang": "en",
+  "title": "Who are the Druze?",
+  "desc": "A concise, neutral editorial introduction.",
+  "url": "en/encyclopedia/who-are-the-druze/",
+  "tags": ["intro", "identity", "overview"]
+},
+{
+  "lang": "en",
+  "title": "Historical overview",
+  "desc": "A documentary-style outline of key milestones.",
+  "url": "en/encyclopedia/history/",
+  "tags": ["history", "archive"]
+}
+
+
 ]
+
+
