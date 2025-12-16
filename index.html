@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>druze | موسوعة متحفية</title>
+  <meta name="description" content="موقع موسوعي متحفي هادئ عن الدروز باللغتين العربية والإنجليزية."/>
+  <base href="/druze/">
+
+  <!-- سنضيف CSS في الخطوة القادمة -->
+  <link rel="stylesheet" href="assets/css/museum.css"/>
+
+  <!-- سنضيف JS في الخطوة القادمة -->
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <div class="kicker">موسوعة</div>
+        <div class="logo">DRUZE</div>
+      </a>
+
+      <nav class="nav">
+        <a class="pill" href="ar/">العربية</a>
+        <a class="pill" href="en/">English</a>
+        <button class="pill" onclick="toggleTheme()">الوضع</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <div class="card card-pad">
+      <div class="kicker">تصميم متحفي هادئ</div>
+      <h1 class="h1">موسوعة ثقافية عن الدروز</h1>
+      <p class="lead">
+        موقع احترافي سريع، مُهيأ للمشاركة والقراءة الطويلة: صفحات موسوعية، أقسام، بحث، ووضع ليلي — بدون Node.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="ar/">ابدأ بالعربية</a>
+        <a class="btn ghost" href="en/">Start in English</a>
+        <a class="btn ghost" href="ar/search.html">بحث</a>
+      </div>
+    </div>
+
+    <section class="main">
+      <div class="section-title">
+        <h2>الهيكل</h2>
+        <div class="hint">سنضيفه خطوة بخطوة</div>
+      </div>
+
+      <div class="grid3">
+        <div class="card tile">
+          <div class="kicker">موسوعة</div>
+          <h3>صفحات منظمة</h3>
+          <p>مقالات مقسمة + روابط داخلية + تجربة قراءة فخمة.</p>
+        </div>
+        <div class="card tile">
+          <div class="kicker">لغتان</div>
+          <h3>Arabic / English</h3>
+          <p>RTL/LTR مع نفس الجودة البصرية.</p>
+        </div>
+        <div class="card tile">
+          <div class="kicker">أداة</div>
+          <h3>بحث داخلي</h3>
+          <p>بحث سريع بدون سيرفر أو قاعدة بيانات.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© druze</div>
+  </footer>
+</body>
+</html>
