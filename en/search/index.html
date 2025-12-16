@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Search | druze</title>
+  <meta name="description" content="Search within the encyclopedia."/>
+  <base href="/druze/">
+  <link rel="stylesheet" href="assets/css/museum.css"/>
+  <script defer src="assets/js/site.js"></script>
+  <script defer src="assets/js/search.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="en/">
+        <div class="kicker">Tool</div>
+        <div class="logo">Search</div>
+      </a>
+
+      <nav class="nav">
+        <a class="pill" href="en/">Home</a>
+        <a class="pill" href="en/encyclopedia/who-are-the-druze/">Intro</a>
+        <a class="pill" href="en/encyclopedia/history/">History</a>
+        <a class="pill" href="ar/search/">العربية</a>
+        <button class="pill" onclick="toggleTheme()">Theme</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main" style="padding-top:26px">
+    <section class="card card-pad">
+      <div class="kicker">Instant search</div>
+      <h1 class="h1" style="font-size:40px">Search the encyclopedia</h1>
+      <p class="lead">Type a word or phrase. Results update instantly.</p>
+
+      <div style="margin-top:14px">
+        <input id="q" class="search-input" placeholder="Search: history, identity, intro..." />
+      </div>
+
+      <div class="hr"></div>
+      <div id="results" class="search-results list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© druze — search</div>
+  </footer>
+</body>
+</html>
